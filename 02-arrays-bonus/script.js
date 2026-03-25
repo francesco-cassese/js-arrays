@@ -29,13 +29,27 @@ console.log(longNames);
 
 // 3. Rimuovi 'Ed' dall'array teachers
 
-const userRemoved = teachers.splice(5, 1,)
+const userRemoved = teachers.splice(5, 1,);
 console.log(teachers);
 
 
 // 4. Verifica se 'Fabio' è presente nell'array teachers
 // e salva il risultato nella variabile isFabioPresent
-const isFabioPresent = null;
+
+
+let teacherFound = false // variabile da poter richiamare nel for
+let searchTeacher = 'Fabio' //Variabile per generalizzare il for 
+
+for (let i = 0; i < teachers.length; i++) {  //Ciclo che controlla la lista 
+  if (teachers[i] === searchTeacher) {       //Se il nome della lista corrisponde 
+    teacherFound = true                      //a quello assegnato alla variabile allora smetti di cercare.
+    break
+  }
+}
+
+const isFabioPresent = teacherFound; //Salvo il risultato
+
+
+console.log(isFabioPresent);
 
 // 5. Unisci tutti gli insegnanti nell'array teachers in una stringa  separata da virgole e salvala nella variabile teachersString
-const teachersString = null;
