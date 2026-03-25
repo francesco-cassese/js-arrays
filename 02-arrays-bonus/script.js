@@ -43,18 +43,20 @@ console.log(teachers);
 
 
 let teacherFound = false; // variabile da poter richiamare nel for
-let searchTeacher = 'Fabio'; //Variabile per generalizzare il for 
+let searchTeacher = 'Fabio'; //Variabile per generalizzare il for
+let count = 0
 
 for (let i = 0; i < teachers.length; i++) {  //Ciclo che controlla la lista 
-  if (teachers[i] === searchTeacher) {       //Se il nome della lista corrisponde 
-    teacherFound = true                      //a quello assegnato alla variabile allora smetti di cercare.
-    break
+  if (teachers[i] === searchTeacher) {       //Controlla i nomi della lista 
+    teacherFound = true;                     //Se corrisponde allora cambia lo stato in true
+    count++;                                 //Aumenta il contatore di 1
   }
 }
 
 const isFabioPresent = teacherFound; //Salvo il risultato
 
 console.log(isFabioPresent);
+console.log(`${count} ${searchTeacher} trovato/i`)
 
 // 5. Unisci tutti gli insegnanti nell'array teachers in una stringa  separata da virgole e salvala nella variabile teachersString
 
