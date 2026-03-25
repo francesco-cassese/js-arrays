@@ -56,7 +56,13 @@ for (let i = 0; i < teachers.length; i++) {  //Ciclo che controlla la lista
 const isFabioPresent = teacherFound; //Salvo il risultato
 
 console.log(isFabioPresent);
-console.log(`${count} ${searchTeacher} trovato/i`)
+
+if (isFabioPresent) {
+  console.log(`${count} ${searchTeacher} trovato/i`) // Se il risultato è vero stampa questo
+} else {
+  console.log('Nessuna corrispondenza trovata'); // Altrimenti stampa quest'altro
+
+}
 
 // 5. Unisci tutti gli insegnanti nell'array teachers in una stringa  separata da virgole e salvala nella variabile teachersString
 
