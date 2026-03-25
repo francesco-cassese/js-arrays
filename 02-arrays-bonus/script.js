@@ -37,8 +37,8 @@ console.log(teachers);
 // e salva il risultato nella variabile isFabioPresent
 
 
-let teacherFound = false // variabile da poter richiamare nel for
-let searchTeacher = 'Fabio' //Variabile per generalizzare il for 
+let teacherFound = false; // variabile da poter richiamare nel for
+let searchTeacher = 'Fabio'; //Variabile per generalizzare il for 
 
 for (let i = 0; i < teachers.length; i++) {  //Ciclo che controlla la lista 
   if (teachers[i] === searchTeacher) {       //Se il nome della lista corrisponde 
@@ -49,7 +49,10 @@ for (let i = 0; i < teachers.length; i++) {  //Ciclo che controlla la lista
 
 const isFabioPresent = teacherFound; //Salvo il risultato
 
-
 console.log(isFabioPresent);
 
 // 5. Unisci tutti gli insegnanti nell'array teachers in una stringa  separata da virgole e salvala nella variabile teachersString
+
+const teachersString = teachers.toString();
+
+console.log(teachersString);
